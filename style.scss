@@ -1,0 +1,130 @@
+@use 'css' as *;
+
+html {
+  font-family: $sans-serif-font-stack;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $wenge-brown;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $white-coffee;
+}
+
+.wrapper {
+  max-width: 736px;
+  border-radius: 2rem;
+  background: #fff;
+  padding-bottom: 2rem;
+}
+
+.hero-content-container,
+.preparation,
+.ingredients,
+.instructions,
+.nutrition {
+  margin: 2rem 2rem;
+}
+
+.hero__h1 {
+  font-family: $serif-font-stack;
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1;
+  padding-bottom: 1.5rem;
+  color: $dark-charcoal;
+}
+
+.ingredients__ul,
+.preparation__ul,
+.instructions__ol,
+.nutrition__ul {
+  padding: 0 0.5rem;
+}
+
+.ingredients__li,
+.preparation__li,
+.instructions__li,
+.nutrition__li {
+  list-style-position: inside;
+  padding: 0.5rem 0;
+}
+
+.preparation {
+  background: $snow;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.ingredients__h2,
+.instructions__h2,
+.nutrition__h2 {
+  font-family: $serif-font-stack;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: $brandy-red;
+  padding-bottom: 0.8rem;
+}
+
+.preparation__h2 {
+  font-family: $sans-serif-font-stack;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: $dark-raspberry;
+}
+
+.nutrition__ul {
+  list-style: none;
+  padding: 0 2.2rem;
+}
+
+.nutrition__li {
+  padding: 0.5rem 0 0.5rem 0;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+
+  span {
+    align-self: flex-start;
+    width: 50%;
+  }
+}
+.emphasized {
+  font-weight: 700;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: $white-coffee;
+  position: absolute;
+  left: 0;
+}
+
+@media only screen and (min-width: 489px) {
+  .hero-image-container {
+    margin: 2rem 2rem 2rem 2rem;
+  }
+  .hero__img {
+    border-radius: 1rem;
+  }
+
+  .wrapper {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  /*
+  .hero-image-container,
+  .hero-content-container,
+  .preparation,
+  .ingredients,
+  .instructions,
+  .nutrition {
+    max-width: 736px;
+  }
+  */
+}

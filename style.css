@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #5f564d;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #e3ddd7;
+}
+
+.wrapper {
+  max-width: 736px;
+  border-radius: 2rem;
+  background: #fff;
+  padding-bottom: 2rem;
+}
+
+.hero-content-container,
+.preparation,
+.ingredients,
+.instructions,
+.nutrition {
+  margin: 2rem 2rem;
+}
+
+.hero__h1 {
+  font-family: "Young Serif", serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1;
+  padding-bottom: 1.5rem;
+  color: #312e2c;
+}
+
+.ingredients__ul,
+.preparation__ul,
+.instructions__ol,
+.nutrition__ul {
+  padding: 0 0.5rem;
+}
+
+.ingredients__li,
+.preparation__li,
+.instructions__li,
+.nutrition__li {
+  list-style-position: inside;
+  padding: 0.5rem 0;
+}
+
+.preparation {
+  background: #fff7fb;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.ingredients__h2,
+.instructions__h2,
+.nutrition__h2 {
+  font-family: "Young Serif", serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #854632;
+  padding-bottom: 0.8rem;
+}
+
+.preparation__h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #7a284e;
+}
+
+.nutrition__ul {
+  list-style: none;
+  padding: 0 2.2rem;
+}
+
+.nutrition__li {
+  padding: 0.5rem 0 0.5rem 0;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+}
+.nutrition__li span {
+  align-self: flex-start;
+  width: 50%;
+}
+
+.emphasized {
+  font-weight: 700;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: #e3ddd7;
+  position: absolute;
+  left: 0;
+}
+
+@media only screen and (min-width: 489px) {
+  .hero-image-container {
+    margin: 2rem 2rem 2rem 2rem;
+  }
+  .hero__img {
+    border-radius: 1rem;
+  }
+  .wrapper {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+  /*
+  .hero-image-container,
+  .hero-content-container,
+  .preparation,
+  .ingredients,
+  .instructions,
+  .nutrition {
+    max-width: 736px;
+  }
+  */
+}
+
+/*# sourceMappingURL=style.css.map */
